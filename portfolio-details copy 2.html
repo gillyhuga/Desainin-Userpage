@@ -29,6 +29,8 @@
     <!--    Stylesheets-->
     <!-- ===============================================-->
     <link href="assets/css/theme.css" rel="stylesheet" />
+    <link href="vendors/swiper/swiper-bundle.min.css" rel="stylesheet">
+    <link href="vendors/aos/aos.css" rel="stylesheet">
 
 </head>
 
@@ -139,194 +141,102 @@
         </div>
 
 
-
         <!-- ============================================-->
         <!-- <section> begin ============================-->
-        <section id="portfolio" class="portfolio">
 
-            <div class="container" data-aos="fade-up">
+        <!-- ======= Breadcrumbs ======= -->
+        <section class="breadcrumbs">
+            <div class="container">
 
-                <div class="container">
-                    <div class="row flex-center">
-                        <div class="col-md-8 col-lg-5 text-center">
-                            <h2>Portofolio</h2>
-                            <p>Ini adalah kisah pelanggan kami yang telah bergabung dengan kami dengan senang hati saat menggunakan jasa kami.
+                <ol>
+                    <li><a href="index.html">Home</a></li>
+                    <li>Portfolio Details</li>
+                </ol>
+                <h2>Portfolio Details</h2>
+
+            </div>
+        </section>
+        <!-- End Breadcrumbs -->
+
+        <!-- ======= Portfolio Details Section ======= -->
+        <section id="portfolio-details" class="portfolio-details">
+            <div class="container">
+
+                <div class="row gy-4">
+
+                    <div class="col-lg-8">
+                        <div class="portfolio-details-slider swiper-container">
+                            <div class="swiper-wrapper align-items-center">
+
+                                <div class="carousel slide pt-6" id="carouselExampleDark" data-bs-ride="carousel">
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active" data-bs-interval="10000">
+                                            <div class="row h-100">
+                                                <div class="card h-auto">
+                                                    <img src="assets/img/portfolio/portfolio-7.jpg" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="carousel-item" data-bs-interval="2000">
+                                            <div class="row h-100">
+                                                <div class="card h-auto">
+                                                    <img src="assets/img/portfolio/portfolio-8.png" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="carousel-item">
+                                            <div class="row h-100">
+                                                <div class="card h-auto">
+                                                    <img src="assets/img/portfolio/portfolio-9.png" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row px-3 px-md-0 mt-4">
+                                        <div class="col-6 position-relative">
+                                            <ol class="carousel-indicators">
+                                                <li class="active" data-bs-target="#carouselExampleDark" data-bs-slide-to="0"></li>
+                                                <li data-bs-target="#carouselExampleDark" data-bs-slide-to="1"></li>
+                                                <li data-bs-target="#carouselExampleDark" data-bs-slide-to="2"></li>
+                                            </ol>
+                                        </div>
+                                        <div class="col-6 position-relative"><a class="carousel-control-prev carousel-icon z-index-2" href="#carouselExampleDark" role="button" data-bs-slide="prev"><span class="carousel-control-prev-icon"
+                              aria-hidden="true"></span><span class="visually-hidden">Previous</span></a><a class="carousel-control-next carousel-icon z-index-2" href="#carouselExampleDark" role="button" data-bs-slide="next"><span class="carousel-control-next-icon" aria-hidden="true"></span><span
+                              class="visually-hidden">Next</span></a></div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="swiper-pagination"></div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4">
+                        <div class="portfolio-info">
+                            <h3>Project information</h3>
+                            <ul>
+                                <li><strong>Category</strong>: Label Kemasan, Web design, dan Logo</li>
+                                <li><strong>Client</strong>: Oala Strore</li>
+                                <li><strong>Project date</strong>: 24 March, 2020</li>
+                                <li><strong>Project URL</strong>: <a href="#">www.Oala.com</a></li>
+                            </ul>
+                        </div>
+                        <div class="portfolio-description">
+                            <h2>Oala Strore</h2>
+                            <p>
+                                Contoh details ke 3 Permintaan design dari Oala Store yang mempercayakan designnya kepada Kami meliputi : 1 design Label Kemasan, 1 Web Design, dan 1 logo
+                            </p>
+                            <p>
+                                Tunggu apalagi ? yuk percayakan design yang anda impikan kepada kami :)
                             </p>
                         </div>
                     </div>
 
-                    <div class="row" data-aos="fade-up" data-aos-delay="100">
-                        <div class="col-lg-12 d-flex justify-content-center">
-                            <ul id="portfolio-flters">
-                            </ul>
-                        </div>
-                    </div>
-
-                    <div class="row gy-4 portfolio-container" data-aos="fade-up" data-aos-delay="200">
-
-                        <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-                            <div class="portfolio-wrap">
-                                <img src="assets/img/portfolio/portfolio-1.jpg" class="img-fluid" alt="">
-                                <div class="portfolio-info">
-                                    <h4>ONNE </h4>
-                                    <p>Label kemasan </p>
-                                    <div class="portfolio-links">
-                                        <a href="portfolio-details.html" title="More Details"><i class="fas fa-link"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-                            <div class="portfolio-wrap">
-                                <img src="assets/img/portfolio/portfolio-2.png" class="img-fluid" alt="">
-                                <div class="portfolio-info">
-                                    <h4>Zugucase.com</h4>
-                                    <p>Web</p>
-                                    <div class="portfolio-links">
-                                        <a href="portfolio-details.html" title="More Details"><i class="fas fa-link"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-                            <div class="portfolio-wrap">
-                                <img src="assets/img/portfolio/portfolio-3.jpg" class="img-fluid" alt="">
-                                <div class="portfolio-info">
-                                    <h4>Groovemap</h4>
-                                    <p>Logo</p>
-                                    <div class="portfolio-links">
-                                        <a href="portfolio-details.html" title="More Details"><i class="fas fa-link"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-                            <div class="portfolio-wrap">
-                                <img src="assets/img/portfolio/portfolio-4.jpg" class="img-fluid" alt="">
-                                <div class="portfolio-info">
-                                    <h4>Honest Beauty</h4>
-                                    <p>Label kemasan</p>
-                                    <div class="portfolio-links">
-                                        <a href="portfolio-details copy.html" title="More Details"><i class="fas fa-link"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-                            <div class="portfolio-wrap">
-                                <img src="assets/img/portfolio/portfolio-5.png" class="img-fluid" alt="">
-                                <div class="portfolio-info">
-                                    <h4>Babyzania.com</h4>
-                                    <p>Web</p>
-                                    <div class="portfolio-links">
-                                        <a href="portfolio-details copy.html" title="More Details"><i class="fas fa-link"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-                            <div class="portfolio-wrap">
-                                <img src="assets/img/portfolio/portfolio-6.png" class="img-fluid" alt="">
-                                <div class="portfolio-info">
-                                    <h4>GreenHouse</h4>
-                                    <p>Logo</p>
-                                    <div class="portfolio-links">
-                                        <a href="portfolio-details copy.html" title="More Details"><i class="fas fa-link"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-                            <div class="portfolio-wrap">
-                                <img src="assets/img/portfolio/portfolio-7.jpg" class="img-fluid" alt="">
-                                <div class="portfolio-info">
-                                    <h4>Acqua Panna</h4>
-                                    <p>Label kemasan</p>
-                                    <div class="portfolio-links">
-                                        <a href="portfolio-details copy 2.html" title="More Details"><i class="fas fa-link"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-                            <div class="portfolio-wrap">
-                                <img src="assets/img/portfolio/portfolio-8.png" class="img-fluid" alt="">
-                                <div class="portfolio-info">
-                                    <h4>Newchapter.com</h4>
-                                    <p>web</p>
-                                    <div class="portfolio-links">
-                                        <a href="portfolio-details copy 2.html" title="More Details"><i class="fas fa-link"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-                            <div class="portfolio-wrap">
-                                <img src="assets/img/portfolio/portfolio-9.png" class="img-fluid" alt="">
-                                <div class="portfolio-info">
-                                    <h4>Loon Kombucha </h4>
-                                    <p>Logo</p>
-                                    <div class="portfolio-links">
-                                        <a href="portfolio-details copy 2.html" title="More Details"><i class="fas fa-link"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-                            <div class="portfolio-wrap">
-                                <img src="assets/img/portfolio/logo.png" class="img-fluid" alt="">
-                                <div class="portfolio-info">
-                                    <h4>Loon Kombucha </h4>
-                                    <p>Logo</p>
-                                    <div class="portfolio-links">
-                                        <a href="portfolio-details.html" title="More Details"><i class="fas fa-link"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-                            <div class="portfolio-wrap">
-                                <img src="assets/img/portfolio/logo1.png" class="img-fluid" alt="">
-                                <div class="portfolio-info">
-                                    <h4>Loon Kombucha </h4>
-                                    <p>Logo</p>
-                                    <div class="portfolio-links">
-                                        <a href="portfolio-details.html" title="More Details"><i class="fas fa-link"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-                            <div class="portfolio-wrap">
-                                <img src="assets/img/portfolio/logo2.png" class="img-fluid" alt="">
-                                <div class="portfolio-info">
-                                    <h4>Loon Kombucha </h4>
-                                    <p>Logo</p>
-                                    <div class="portfolio-links">
-                                        <a href="portfolio-details.html" title="More Details"><i class="fas fa-link"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-
                 </div>
 
+            </div>
         </section>
-        <!-- <section> close ============================-->
-        <!-- ============================================-->
+        <!-- End Portfolio Details Section -->
         <!-- ============================================-->
         <!-- <section> begin ============================-->
         <section class="bg-200 pt-9 pb-0">
@@ -399,8 +309,8 @@
         </section>
         <!-- <section> close ============================-->
         <!-- ============================================-->
-
     </main>
+    <!-- End #main -->
     <!-- ===============================================-->
     <!--    End of Main Content-->
     <!-- ===============================================-->
@@ -415,10 +325,9 @@
     <script src="vendors/bootstrap/bootstrap.min.js"></script>
     <script src="vendors/is/is.min.js"></script>
     <script src="https://polyfill.io/v3/polyfill.min.js?features=window.scroll"></script>
-    <script src="assets/js/main.js"></script>
+    <script src="assets/js/theme.js"></script>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    <script src="https://kit.fontawesome.com/d0701816e2.js" crossorigin="anonymous"></script>
 
     <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap" rel="stylesheet">
 </body>
